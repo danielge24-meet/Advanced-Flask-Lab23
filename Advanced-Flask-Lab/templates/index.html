@@ -22,11 +22,11 @@
             <!--  -->
             <br> <br>
 						<ul class="icons">
-							<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon style2 fa-500px"><span class="label">500px</span></a></li>
-							<li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+							<li><a href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Den" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://500px.com/" class="icon style2 fa-500px"><span class="label">500px</span></a></li>
+							<li><a href="https://accounts.google.com/InteractiveLogin/signinchooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&osid=1&passive=1209600&service=mail&ifkv=AeDOFXiRP51Zin_lHY_WkgDVVCQ-jS4_Su2NFQscw441OondmHHHC5lxenMiwc0G2dJ_KYzxChhtQQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
 						</ul>
 					</header>
 
@@ -39,33 +39,33 @@
                 <div>
                       <a href="">
                         <img src="{{image_link}}" alt="" />
-                        <h3>Caption... blah blah blah</h3>
+                        <h3>caption... blah blah blah</h3>
                       </a>
                 
-                      <a href="">
+                    <a href="">
                         <img src="{{url_for('static',filename='images/thumbs/02.jpg')}}" alt="" />
-                        <h3>Caption... blah blah blah</h3>
-                      </a>
-                </div>    
-                <div>
-                  <a href="">
-                        <img src="{{url_for('static',filename='images/thumbs/03.jpg')}}" alt="" />
-                        <h3>Caption... blah blah blah</h3>
-                      </a>
-                </div>  
+                        <h3>caption... blah blah blah</h3>
+                        </a>
 
-							</section>
+                    <a href="">
+                		<img src="{{url_for('static',filename='images/thumbs/03.jpg')}}" alt="">
+                		<h3>caption... blah blah blah</h3>
+                	</a>
+                </div> 
+                
+                
+						
 
 							<!-- Posts -->
-							<section class="thumbnails">
+							
                 
                 <div>
                 	{%for post in posts%}
-                      <a href="">
+                	<a href="">
                         <img src="{{post}}" alt="" />
                         <h3>{{posts[post]}}</h3>
-                      </a>
-               {%endfor%}
+                        </a>
+               		{%endfor%}
                 </div>  
 
 							</section>
